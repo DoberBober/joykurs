@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>JoyReactor - смешные курсы валют и нефти</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">	
+	<link rel="stylesheet" href="./styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<audio id="audio" class="audio" autoplay loop controls>
+		<source src="nothing_happened_in_1999.mp3" />
+	</audio>
+
+	<button id="playBtn" class="playBtn"></button>
+
+	<div class="rubles"></div>
+	
+	<div class="container">	
+		<div class="prices">
+			<div id="usd" class="prices__item">
+				<div class="prices__value prices__value--usd">10</div>
+				<div class="prices__note">рублей за доллар</div>
+			</div>
+			<div id="eur" class="prices__item">
+				<div class="prices__value prices__value--eur">10</div>
+				<div class="prices__note">рублей за евро</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="foreground"></div>
+
+	<div class="copyrights">
+		<a href="https://joyreactor.cc/" class="copyright__item copyright__item--reactor">JoyReactor</a>
+		<a href="https://www.cbr-xml-daily.ru/" class="copyright__item copyright__item--api">Курсы валют, API</a>
+	</div>
+
+	<script src="./scripts.js"></script>
+
+	<link rel="dns-prefetch" href="https://www.cbr-xml-daily.ru/" />
+	<script id="script" src="//www.cbr-xml-daily.ru/daily_jsonp.js" async></script>
+</body>
+</html>
